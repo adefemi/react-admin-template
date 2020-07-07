@@ -1,0 +1,46 @@
+@import "../../styles/theme";
+
+
+.transaction_table_main{
+  overflow: auto;
+
+  .noData{
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    background-color: white;
+    font-family: $secondary_font;
+    font-weight: 500;
+    color: darken(white, 40%);
+  }
+
+  table{
+    width: 100%;
+  }
+
+  th, td{
+    padding: 10px 20px;
+  }
+
+  th{
+    font-size: 14px;
+    text-align: left;
+  }
+
+  td{
+    font-size: 15px;
+    font-family: $secondary_font;
+    min-width: 50px;
+  }
+
+  thead{
+    background-color: darken(white, 10%);
+  }
+
+  tbody{
+    background-color: white;
+  }
+
+}

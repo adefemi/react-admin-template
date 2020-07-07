@@ -1,0 +1,34 @@
+@import url("https://fonts.googleapis.com/css?family=Nunito+Sans:300,400,600,700,800,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Tajawal:wght@300;400;500&display=swap");
+.global-loader {
+  width: 100%;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: -1;
+  background-color: rgba(255, 255, 255, 0.7);
+  backdrop-filter: blur(5px);
+  position: fixed;
+  visibility: hidden;
+  opacity: 0;
+  transition: 0.3s ease;
+}
+.global-loader .inner-loader {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  padding: 20px;
+}
+.global-loader .inner-loader .context {
+  font-size: 13px;
+  font-weight: bold;
+  color: #0378a2;
+}
+.global-loader.show {
+  visibility: visible;
+  opacity: 1;
+  z-index: 10000000;
+}
+
+/*# sourceMappingURL=globalLoader.css.map */

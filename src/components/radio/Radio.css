@@ -1,0 +1,115 @@
+@import url("https://fonts.googleapis.com/css?family=Nunito+Sans:300,400,600,700,800,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Tajawal:wght@300;400;500&display=swap");
+.Radio[type=radio]:checked {
+  position: absolute;
+  left: -9999px;
+}
+.Radio[type=radio]:checked + label {
+  font-family: "Tajawal", sans-serif;
+  position: relative;
+  padding-left: 28px;
+  cursor: pointer;
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 22px;
+  display: inline-block;
+  color: #666;
+  color: #012e3e;
+}
+.Radio[type=radio]:checked + label:before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 18px;
+  height: 18px;
+  border: 2px solid #ddd;
+  border-radius: 100%;
+  background: #fff;
+  border-color: #0378a2;
+}
+.Radio[type=radio]:checked + label:after {
+  content: "";
+  width: 12px;
+  height: 12px;
+  background: #0378a2;
+  position: absolute;
+  top: 5px;
+  left: 5px;
+  border-radius: 100%;
+  -webkit-transition: all 0.2s ease;
+  transition: all 0.2s ease;
+  opacity: 1;
+  -webkit-transform: scale(1);
+  transform: scale(1);
+}
+.Radio[type=radio]:not(:checked) {
+  position: absolute;
+  left: -9999px;
+}
+.Radio[type=radio]:not(:checked) + label {
+  font-family: "Tajawal", sans-serif;
+  position: relative;
+  padding-left: 28px;
+  cursor: pointer;
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 22px;
+  display: inline-block;
+  color: #666;
+}
+.Radio[type=radio]:not(:checked) + label:before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 18px;
+  height: 18px;
+  border: 2px solid #ddd;
+  border-radius: 100%;
+  background: #fff;
+}
+.Radio[type=radio]:not(:checked) + label:after {
+  content: "";
+  width: 12px;
+  height: 12px;
+  background: #0378a2;
+  position: absolute;
+  top: 5px;
+  left: 5px;
+  border-radius: 100%;
+  -webkit-transition: all 0.2s ease;
+  transition: all 0.2s ease;
+  opacity: 0;
+  -webkit-transform: scale(0);
+  transform: scale(0);
+}
+.Radio[type=radio]:disabled + label {
+  cursor: not-allowed;
+  opacity: 0.7;
+}
+.Radio[type=radio]:disabled + label:before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 18px;
+  height: 18px;
+  border: 2px solid #ddd;
+  border-radius: 100%;
+  background: #f5f5f5;
+}
+.Radio[type=radio]:disabled + label:after {
+  content: "";
+  width: 12px;
+  height: 12px;
+  background: #049dd4;
+  position: absolute;
+  top: 5px;
+  left: 5px;
+  border-radius: 100%;
+  -webkit-transition: all 0.2s ease;
+  transition: all 0.2s ease;
+}
+
+/*# sourceMappingURL=Radio.css.map */

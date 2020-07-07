@@ -1,0 +1,66 @@
+@import url("https://fonts.googleapis.com/css?family=Nunito+Sans:300,400,600,700,800,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Tajawal:wght@300;400;500&display=swap");
+.adx-paginator {
+  display: flex;
+  list-style: none;
+  font-family: "Nunito Sans", sans-serif;
+}
+.adx-paginator li {
+  padding: 0 !important;
+  overflow: hidden;
+  height: 50px;
+  width: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: 0.3s ease;
+  background-color: #ffffff;
+  margin-right: 10px;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.07);
+  border-radius: 50%;
+  color: #025370;
+  font-weight: 600;
+  outline: none !important;
+  cursor: pointer;
+}
+.adx-paginator li img {
+  width: 8px;
+}
+.adx-paginator li:last-child {
+  margin-right: 0;
+}
+.adx-paginator li.disabled {
+  cursor: not-allowed;
+  background-color: #f2f2f2;
+}
+.adx-paginator li:hover {
+  background-color: rgba(3, 120, 162, 0.1);
+}
+.adx-paginator li.active {
+  background-color: #0378a2;
+  color: #ffffff;
+}
+@media screen and (max-width: 600px) {
+  .adx-paginator li {
+    height: 35px;
+    width: 35px;
+    font-size: 12px;
+  }
+  .adx-paginator li img {
+    width: 5px;
+  }
+}
+.adx-paginator .dots {
+  font-size: 25px;
+  line-height: 40px;
+  margin-right: 10px;
+  color: #999999;
+}
+@media screen and (max-width: 600px) {
+  .adx-paginator {
+    justify-content: center;
+    margin: 0 auto;
+  }
+}
+
+/*# sourceMappingURL=pagination.css.map */

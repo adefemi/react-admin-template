@@ -1,0 +1,39 @@
+@import url("https://fonts.googleapis.com/css?family=Nunito+Sans:300,400,600,700,800,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Tajawal:wght@300;400;500&display=swap");
+.transaction_table_main {
+  overflow: auto;
+}
+.transaction_table_main .noData {
+  height: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  background-color: white;
+  font-family: "Tajawal", sans-serif;
+  font-weight: 500;
+  color: #999999;
+}
+.transaction_table_main table {
+  width: 100%;
+}
+.transaction_table_main th, .transaction_table_main td {
+  padding: 10px 20px;
+}
+.transaction_table_main th {
+  font-size: 14px;
+  text-align: left;
+}
+.transaction_table_main td {
+  font-size: 15px;
+  font-family: "Tajawal", sans-serif;
+  min-width: 50px;
+}
+.transaction_table_main thead {
+  background-color: #e6e6e6;
+}
+.transaction_table_main tbody {
+  background-color: white;
+}
+
+/*# sourceMappingURL=transactionTable.css.map */

@@ -1,0 +1,25 @@
+@import "../../styles/theme";
+
+.currency-input-field{
+  display: flex;
+  border-radius: 4px;
+  overflow: hidden;
+
+  .select-input{
+    width: 90px;
+    min-width: 90px;
+
+    &.input-control{
+      width: 50px;
+      flex: unset;
+    }
+    .input-field{
+      background-color: white;
+    }
+
+  }
+  .input-field{
+    border-radius: 0;
+    border: none;
+  }
+}

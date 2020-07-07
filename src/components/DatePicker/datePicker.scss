@@ -1,0 +1,176 @@
+@import "../../styles/theme";
+
+.adx-datePicker{
+  font-family: $primary-font;
+  position: relative;
+
+  .input-field{
+    border: 1px solid darken(white, 10%);
+    border-radius: 2px;
+    height: 40px;
+    overflow: hidden;
+    display: flex;
+    padding: 0 10px;
+    align-items: center;
+    transition: .3s ease;
+
+    input{
+      border: none;
+      outline: none;
+      width: 100%;
+
+      text-transform: capitalize;
+      color: darken(white, 60%);
+
+      &:disabled{
+        background-color: transparent;
+      }
+    }
+
+    img{
+      width: 15px;
+    }
+
+    &:hover{
+      border-color: $primary-color;
+    }
+  }
+
+  .date-picker-con{
+    position: fixed;
+    z-index: 1000;
+    background-color: transparent;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+  }
+
+  .date-picker{
+    background-color: white;
+    border-radius: 4px;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.15);
+    position: fixed;
+    z-index: 1001;
+    min-width: 250px;
+    transition: .4s ease;
+    opacity: 0;
+    visibility: hidden;
+    transform-origin: left top;
+    transform: scale(1);
+
+    &.show{
+      opacity: 1;
+      visibility: visible;
+      transform: scale(1);
+    }
+
+    .picker-heading{
+      display: flex;
+      justify-content: space-between;
+      padding: 10px 12px;
+      box-sizing: border-box;
+      align-items: center;
+
+      .backKey{
+        font-size: 12px;
+        font-weight: 600;
+        color: $primary-color;
+        cursor: pointer;
+      }
+
+      button{
+        margin: 0;
+        padding: 0;
+        background-color: transparent;
+        border: none;
+        cursor: pointer;
+        outline: none;
+        img{
+          width: 15px;
+        }
+      }
+
+      .rcontrol{
+        button{
+          transform: rotateY(180deg);
+        }
+      }
+
+      .lcontrol, .rcontrol{
+        display: flex;
+        align-items: center;
+      }
+
+      .context-main{
+        font-size: 13px;
+        color: darken(white, 70%);
+        display: flex;
+
+
+        span{
+          cursor: pointer;
+          transition: .3s ease;
+          margin: 0 3px;
+          text-transform: capitalize;
+          &:hover{
+            color: $primary-color;
+          }
+        }
+
+      }
+    }
+    .body{
+      padding: 0 10px;
+      padding-bottom: 10px;
+      text-align: center;
+      text-transform: capitalize;
+      font-size: 13px;
+      .date-data{
+        display: grid;
+        grid-template-columns: repeat(7, 1fr);
+
+
+        .weekTitle{
+          height: 35px;
+          line-height: 35px;
+        }
+
+
+      }
+      .weekDays{
+        color: darken(white, 70%);
+        transition: .3s ease;
+        cursor: pointer;
+        height: 35px;
+        line-height: 35px;
+        border-radius: 2px;
+
+        &:hover{
+          background-color: darken(white, 5%);
+        }
+
+        &.disabled{
+          &:hover{
+            background-color: unset !important;
+            cursor: default !important;
+          }
+        }
+
+        &.active{
+          background-color: $primary-color;
+          color: white;
+        }
+
+        &.disabled{
+          color: darken(white, 10%);
+        }
+      }
+      .month-data{
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-gap: 2em;
+      }
+    }
+  }
+}

@@ -1,0 +1,70 @@
+@import url("https://fonts.googleapis.com/css?family=Nunito+Sans:300,400,600,700,800,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Tajawal:wght@300;400;500&display=swap");
+.notification-drop #navNotify {
+  cursor: pointer;
+}
+.notification-drop .notification-con {
+  position: fixed;
+  z-index: 1000;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  visibility: visible;
+}
+.notification-drop .notification-con .overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: transparent;
+}
+.notification-drop .notification-con .not-content {
+  position: fixed;
+  visibility: visible;
+  opacity: 1;
+  z-index: 1;
+  background-color: white;
+  max-width: 400px;
+  max-height: 600px;
+  overflow: auto;
+  border-radius: 4px;
+  top: 20px;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+}
+.notification-drop .notification-con .not-content li {
+  padding: 20px;
+  list-style: none;
+  border-bottom: 1px solid #f2f2f2;
+  cursor: pointer;
+}
+.notification-drop .notification-con .not-content li .info {
+  font-size: 12px;
+  line-height: 25px;
+  color: #333333;
+  font-weight: 600;
+}
+.notification-drop .notification-con .not-content li .time {
+  font-size: 10px;
+  margin-top: 10px;
+  color: gray;
+  font-weight: 500;
+}
+.notification-drop .notification-con .not-content li.active {
+  background-color: #e7faf2;
+  border-color: white;
+}
+.notification-drop .notification-con .not-content li:last-child {
+  border-bottom: none;
+}
+.notification-drop .notification-con.closed {
+  z-index: -1000;
+  visibility: hidden;
+}
+.notification-drop .notification-con.closed .not-content {
+  visibility: hidden;
+  opacity: 0;
+}
+
+/*# sourceMappingURL=notificationDrop.css.map */

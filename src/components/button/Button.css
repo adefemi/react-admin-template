@@ -1,0 +1,165 @@
+@import url("https://fonts.googleapis.com/css?family=Nunito+Sans:300,400,600,700,800,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Tajawal:wght@300;400;500&display=swap");
+.btn-main {
+  background: blue;
+}
+
+.btn {
+  font-family: "Tajawal", sans-serif;
+  background: transparent;
+  border-radius: 4px;
+  padding: 0 15px;
+  height: 35px;
+  color: white;
+  cursor: pointer;
+  font-weight: 600;
+  display: flex;
+  align-items: center !important;
+  font-size: 12px;
+  justify-content: center !important;
+  border: 1px solid transparent;
+}
+
+.disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+.btn:focus,
+.btn:active,
+.btn-sml:focus,
+.btn-sml:active,
+.btn {
+  outline: none;
+  position: relative;
+  text-decoration: none;
+  -webkit-box-shadow: -3px 21px 42px -38px #5680f9;
+  -moz-box-shadow: -3px 21px 42px -38px #5680f9;
+  box-shadow: -3px 21px 42px -38px #5680f9;
+}
+.btn:focus.primary,
+.btn:active.primary,
+.btn-sml:focus.primary,
+.btn-sml:active.primary,
+.btn.primary {
+  background: #0378a2;
+  transition: 0.3s ease;
+}
+.btn:focus.primary:hover,
+.btn:active.primary:hover,
+.btn-sml:focus.primary:hover,
+.btn-sml:active.primary:hover,
+.btn.primary:hover {
+  background: #025370;
+}
+.btn:focus.danger,
+.btn:active.danger,
+.btn-sml:focus.danger,
+.btn-sml:active.danger,
+.btn.danger {
+  background: #ff652d;
+  transition: 0.3s ease;
+}
+.btn:focus.danger:hover,
+.btn:active.danger:hover,
+.btn-sml:focus.danger:hover,
+.btn-sml:active.danger:hover,
+.btn.danger:hover {
+  background: #f94200;
+}
+.btn:focus.success,
+.btn:active.success,
+.btn-sml:focus.success,
+.btn-sml:active.success,
+.btn.success {
+  background: #3dd89a;
+  transition: 0.3s ease;
+}
+.btn:focus.success:hover,
+.btn:active.success:hover,
+.btn-sml:focus.success:hover,
+.btn-sml:active.success:hover,
+.btn.success:hover {
+  background: #26bc80;
+}
+.btn:focus.default,
+.btn:active.default,
+.btn-sml:focus.default,
+.btn-sml:active.default,
+.btn.default {
+  background: #ffffff;
+  color: #000000;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  transition: 0.3s ease;
+}
+.btn:focus.default:hover,
+.btn:active.default:hover,
+.btn-sml:focus.default:hover,
+.btn-sml:active.default:hover,
+.btn.default:hover {
+  background: #ccd6e1;
+}
+.btn:focus.loading,
+.btn:active.loading,
+.btn-sml:focus.loading,
+.btn-sml:active.loading,
+.btn.loading {
+  opacity: 0.7;
+}
+.btn:focus.loading > span,
+.btn:active.loading > span,
+.btn-sml:focus.loading > span,
+.btn-sml:active.loading > span,
+.btn.loading > span {
+  margin-right: 6px;
+}
+.btn:focus:hover,
+.btn:active:hover,
+.btn-sml:focus:hover,
+.btn-sml:active:hover,
+.btn:hover {
+  cursor: pointer;
+}
+.btn:focus:disabled,
+.btn:focus .disabled,
+.btn:active:disabled,
+.btn:active .disabled,
+.btn-sml:focus:disabled,
+.btn-sml:focus .disabled,
+.btn-sml:active:disabled,
+.btn-sml:active .disabled,
+.btn:disabled,
+.btn .disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+.btn:focus.block,
+.btn:active.block,
+.btn-sml:focus.block,
+.btn-sml:active.block,
+.btn.block {
+  width: 100%;
+  display: block;
+}
+.btn:focus .icon-left,
+.btn:active .icon-left,
+.btn-sml:focus .icon-left,
+.btn-sml:active .icon-left,
+.btn .icon-left {
+  padding-right: 10px;
+}
+.btn:focus .content,
+.btn:active .content,
+.btn-sml:focus .content,
+.btn-sml:active .content,
+.btn .content {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.spinner.danger .lds-dual-ring {
+  color: #ff652d !important;
+}
+
+/*# sourceMappingURL=Button.css.map */

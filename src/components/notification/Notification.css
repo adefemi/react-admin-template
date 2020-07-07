@@ -1,0 +1,97 @@
+@import url("https://fonts.googleapis.com/css?family=Nunito+Sans:300,400,600,700,800,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Tajawal:wght@300;400;500&display=swap");
+.notification-main {
+  width: 100%;
+  padding: 20px;
+  position: relative;
+  box-sizing: border-box;
+  display: flex;
+  color: white;
+  font-family: "Tajawal", sans-serif;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  transition: 0.3s ease;
+  margin-bottom: 20px;
+  z-index: 100000001;
+}
+.notification-main .close-button-main {
+  position: absolute;
+  right: 0;
+  top: 0;
+  display: block;
+  color: white !important;
+  cursor: pointer;
+}
+.notification-main .contents {
+  padding: 5px 20px;
+  font-size: 13px;
+  font-weight: 600;
+  color: white;
+}
+.notification-main .contents .title {
+  font-size: 15px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.notification-main.success {
+  background-color: #67e1b0;
+}
+
+.notification-main.info {
+  background-color: #425CB9;
+}
+
+.notification-main.warning {
+  background-color: #ebd18e;
+}
+
+.notification-main.error {
+  background-color: #ff652d;
+}
+
+.notification-main.default {
+  color: black;
+}
+
+.notification-main.closer {
+  visibility: hidden;
+  opacity: 0;
+}
+
+.notification-main.remove {
+  display: none !important;
+}
+
+.icon-contain {
+  color: white !important;
+}
+
+#notification-root {
+  position: fixed;
+  top: 0;
+  right: 0;
+  z-index: 100000001 !important;
+}
+
+.notification-bubble {
+  width: 500px;
+  max-width: 100%;
+  margin-right: 20px;
+  margin-bottom: 20px;
+  transition: 0.3s ease;
+  animation: animateNotificationBubble 0.3s ease-in-out forwards;
+}
+@media screen and (max-width: 480px) {
+  .notification-bubble {
+    width: 100%;
+  }
+}
+
+@keyframes animateNotificationBubble {
+  to {
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+}
+
+/*# sourceMappingURL=Notification.css.map */

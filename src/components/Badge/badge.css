@@ -1,0 +1,68 @@
+@import url("https://fonts.googleapis.com/css?family=Nunito+Sans:300,400,600,700,800,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Tajawal:wght@300;400;500&display=swap");
+.adx-badge {
+  font-family: "Nunito Sans", sans-serif;
+  display: inline-flex;
+  align-items: center;
+  font-size: 13px;
+  color: #666666;
+  position: relative;
+  z-index: 2;
+}
+.adx-badge .status {
+  width: 5px;
+  height: 5px;
+  border-radius: 50%;
+  margin-right: 10px;
+  display: block;
+  position: relative;
+}
+.adx-badge .status.processing::after {
+  position: absolute;
+  content: "";
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  transform: scale(0);
+  opacity: 0;
+  transform-origin: center;
+  background-color: transparent;
+  border: 0.5px solid #1681ee;
+  border-radius: 50%;
+  box-sizing: border-box;
+  animation: ripple infinite 1s linear;
+}
+.adx-badge .counter {
+  position: absolute;
+  top: -5px;
+  font-size: 10px;
+  font-weight: bold;
+  padding: 0 5px;
+  background-color: #ff4643;
+  color: white;
+  border-radius: 20px;
+  left: 50%;
+  transform: translateX(-25%);
+  border: 1px solid white;
+}
+.adx-badge .counter.dot {
+  width: 5px;
+  height: 5px;
+  padding: 0;
+  left: 100%;
+  top: 0;
+  border-radius: 50%;
+}
+@keyframes ripple {
+  0% {
+    transform: scale(0);
+    opacity: 1;
+  }
+  100% {
+    transform: scale(2.5);
+    opacity: 0;
+  }
+}
+
+/*# sourceMappingURL=badge.css.map */

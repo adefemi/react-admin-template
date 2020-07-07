@@ -1,0 +1,12 @@
+@import "../../styles/theme";
+
+.file-constrain{
+  .file-upload-button {
+    cursor: pointer;
+    border-radius: 4px;
+    border: 1px dashed rgba(0, 0, 0, 0.1);
+    outline: none !important;
+    background-color: rgba(0, 0, 0, 0.1);
+    color: rgba(0, 0, 0, 0.6);
+  }
+}

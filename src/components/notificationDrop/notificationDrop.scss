@@ -1,0 +1,85 @@
+@import "../../styles/theme";
+
+.notification-drop{
+
+  #navNotify{
+    cursor: pointer;
+  }
+
+  .notification-con{
+    position: fixed;
+    z-index: 1000;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    visibility: visible;
+
+    .overlay{
+      position: fixed;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background-color: transparent;
+    }
+
+    .not-content{
+      position: fixed;
+      //transition: .3s ease;
+      visibility: visible;
+      opacity: 1;
+
+      z-index: 1;
+      background-color: white;
+      max-width: 400px;
+      max-height: 600px;
+      overflow: auto;
+      border-radius: 4px;
+      top: 20px;
+      box-shadow: 0 10px 20px rgba(black, 0.1);
+
+      li{
+        padding: 20px;
+        list-style: none;
+        border-bottom: 1px solid darken(white, 5%);
+        cursor: pointer;
+        .info{
+          font-size: 12px;
+          line-height: 25px;
+          color: darken(white, 80%);
+          font-weight: 600;
+        }
+        .time{
+          font-size: 10px;
+          margin-top: 10px;
+          color: darken(white, 50%);
+          font-weight: 500;
+        }
+
+        &.active{
+          //.info, .time{
+          //  color: darken($success-color, 20%);
+          //}
+          background-color: lighten($success-color, 40%);
+          border-color: white;
+        }
+
+        &:last-child{
+          border-bottom: none;
+        }
+      }
+
+
+    }
+
+    &.closed{
+      z-index: -1000;
+      visibility: hidden;
+      .not-content{
+        visibility: hidden;
+        opacity: 0;
+      }
+    }
+  }
+}

@@ -1,0 +1,37 @@
+@import url("https://fonts.googleapis.com/css?family=Nunito+Sans:300,400,600,700,800,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Tajawal:wght@300;400;500&display=swap");
+.Toggle .toggle-wrapper {
+  width: 40px;
+  height: 20px;
+  border-radius: 15px;
+  display: inline-flex;
+  box-sizing: border-box;
+  padding: 3px;
+  align-items: center;
+  position: relative;
+  background: #e6e6e6;
+  cursor: pointer;
+  border: none;
+}
+.Toggle .toggle-wrapper .toggle-switch {
+  width: 22px;
+  height: 22px;
+  background: white;
+  border-radius: 50%;
+  position: absolute;
+  transition: all 0.3s ease;
+  right: 100%;
+  transform: translateX(100%);
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+}
+.Toggle .toggle-wrapper .toggle-switch.active {
+  right: 0 !important;
+  transform: translateX(0);
+  background-color: #0378a2;
+}
+.Toggle .toggle-wrapper.active {
+  background: rgba(3, 120, 162, 0.2);
+  border: none;
+}
+
+/*# sourceMappingURL=Toggle.css.map */

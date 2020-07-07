@@ -1,0 +1,10 @@
+.adx-divider {
+  height: 1px;
+  border-bottom: 1px solid #ebebeb;
+  margin: 20px 0;
+}
+.adx-divider.dashed {
+  border-bottom-style: dashed;
+}
+
+/*# sourceMappingURL=divider.css.map */

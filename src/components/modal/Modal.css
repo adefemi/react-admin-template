@@ -1,0 +1,207 @@
+@import url("https://fonts.googleapis.com/css?family=Nunito+Sans:300,400,600,700,800,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Tajawal:wght@300;400;500&display=swap");
+.modal-main {
+  width: 100%;
+  padding: 20px;
+  position: relative;
+  box-sizing: border-box;
+  display: flex;
+  font-family: "Tajawal", sans-serif;
+  transition: 0.3s ease;
+  margin-bottom: 20px;
+  color: #000000;
+}
+.modal-main .close-button {
+  position: absolute;
+  right: 20px;
+  top: 0;
+  display: block;
+  cursor: pointer;
+}
+.modal-main .contents {
+  padding: 5px 20px;
+  font-size: 14px;
+  width: 100%;
+  color: #000000;
+}
+.modal-main .contents .title {
+  font-size: 14px;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+
+.modal-input-dialog {
+  padding: 0 20px 20px 20px;
+}
+
+.modal-main.success {
+  color: #67e1b0;
+}
+
+.modal-main.info {
+  color: #ff8f6f;
+}
+
+.modal-main.warning,
+.modal-main.confirm {
+  color: #ebd18e;
+}
+
+.modal-main.error {
+  color: #ff652d;
+}
+
+.modal-main.close {
+  visibility: hidden;
+  opacity: 0;
+}
+
+.modal-main.remove {
+  display: none !important;
+}
+
+#modal-root {
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  z-index: 100000001;
+}
+
+.modal-node {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.6);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  transition: 0.3s ease;
+  z-index: 1;
+}
+
+.modal-bubble {
+  min-width: 300px;
+  max-width: 600px;
+  box-sizing: border-box;
+  background-color: white;
+  transition: 0.3s ease;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  animation: animateModalBubble 0.3s ease-in-out forwards;
+}
+.modal-bubble .components {
+  width: 100%;
+  padding: 0 20px 20px;
+  box-sizing: border-box;
+  display: flex;
+  justify-content: flex-end;
+}
+.modal-bubble .components .closebutt {
+  align-self: flex-end;
+  margin-left: 10px;
+}
+
+.modal-root-fixed {
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.3);
+  padding: 0 20px;
+  z-index: 100000001;
+}
+.modal-root-fixed .modal-bubble-fixed {
+  width: 100%;
+  max-width: 600px;
+  transition: 0.5s ease;
+  position: absolute;
+  left: 50%;
+  top: -50%;
+  transform: translate(-50%, -50%) scale(1);
+  max-height: 80vh;
+  overflow-y: auto;
+  animation: modalBubble 0.5s ease-in-out forwards;
+  padding: 0 20px !important;
+  box-sizing: border-box;
+}
+.modal-root-fixed .modal-bubble-fixed .inner {
+  background-color: white;
+  position: relative;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  height: 100%;
+  border-radius: 6px;
+}
+.modal-root-fixed .modal-bubble-fixed .close-button {
+  position: absolute;
+  right: 0;
+  top: 0;
+  display: block;
+  cursor: pointer;
+  z-index: 50000000;
+}
+.modal-root-fixed .modal-bubble-fixed .title {
+  padding: 20px;
+  font-family: "Nunito Sans", sans-serif;
+  font-size: 14px;
+  font-weight: bold;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
+.modal-root-fixed .modal-bubble-fixed .contents {
+  padding: 20px;
+}
+.modal-root-fixed .modal-bubble-fixed .footer {
+  padding: 20px;
+  display: flex;
+  justify-content: flex-end;
+}
+.modal-root-fixed .modal-bubble-fixed .footer button {
+  margin-right: 10px;
+}
+.modal-root-fixed.infinite-width .modal-bubble-fixed {
+  max-width: 100%;
+}
+
+.modal-node.closed {
+  opacity: 0;
+}
+.modal-node.closed .modal-bubble {
+  animation: animateModalOut 0.3s ease-in-out forwards;
+}
+
+@keyframes animateModalBubble {
+  from {
+    opacity: 0;
+    transform: rotateX(90deg);
+    margin-top: 200px;
+  }
+  to {
+    opacity: 1;
+    margin-top: 20px;
+    transform: rotateX(0);
+  }
+}
+@keyframes animateModalOut {
+  from {
+    opacity: 1;
+    margin-top: 20px;
+    transform: rotateX(0);
+  }
+  to {
+    opacity: 0;
+    margin-top: -100px;
+    transform: rotateX(0);
+  }
+}
+@keyframes modalBubble {
+  to {
+    transform: translate(-50%, -50%) scale(1);
+    top: 50%;
+  }
+}
+
+/*# sourceMappingURL=Modal.css.map */

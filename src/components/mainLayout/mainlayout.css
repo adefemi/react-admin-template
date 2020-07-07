@@ -1,0 +1,324 @@
+@import url("https://fonts.googleapis.com/css?family=Nunito+Sans:300,400,600,700,800,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Tajawal:wght@300;400;500&display=swap");
+.mainLayout {
+  background-color: #f5f5fb;
+  min-height: 100vh;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+}
+.mainLayout .verify-mail {
+  position: fixed;
+  z-index: 100000000;
+  bottom: 20px;
+  right: 20px;
+  width: 80%;
+  height: 50px;
+  border-radius: 50px;
+  border: 2px solid #ff683c;
+  max-width: 550px;
+  background-color: white;
+  overflow: hidden;
+  transition: 0.5s ease-in-out;
+}
+.mainLayout .verify-mail .info-main {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 50px;
+  height: 50px;
+  background-color: #ff652d;
+  text-align: center;
+  line-height: 50px;
+  color: white;
+  font-weight: bold;
+  font-size: 20px;
+  border-radius: 50%;
+  z-index: 1;
+  box-shadow: 0 10px 20px rgba(2, 83, 112, 0.3);
+  cursor: pointer;
+}
+.mainLayout .verify-mail .content-mail {
+  position: absolute;
+  top: 0;
+  left: 40px;
+  height: 100%;
+  font-size: 14px;
+  width: calc(100% - 40px);
+  min-width: 500px;
+  padding: 0 20px;
+  line-height: 15px;
+  box-sizing: border-box;
+  display: flex;
+  align-items: center;
+}
+.mainLayout .verify-mail .content-mail span {
+  font-weight: 600;
+  color: #ff683c;
+  cursor: pointer;
+}
+.mainLayout .verify-mail.close {
+  width: 50px;
+  border-color: transparent;
+}
+@media screen and (max-width: 600px) {
+  .mainLayout .verify-mail {
+    width: 90%;
+    height: 40px;
+    max-width: 350px;
+  }
+  .mainLayout .verify-mail .info-main {
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    font-size: 16px;
+  }
+  .mainLayout .verify-mail .content-mail {
+    left: 35px;
+    height: 100%;
+    font-size: 12px;
+    width: calc(100% - 35px);
+    min-width: 280px;
+    padding: 0 10px;
+    line-height: 12px;
+  }
+  .mainLayout .verify-mail.close {
+    width: 40px;
+  }
+}
+.mainLayout .sideBar {
+  width: 250px;
+  min-width: 250px;
+  background-color: #ffffff;
+  box-shadow: -1px 0 5px 1px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 20px;
+  max-height: 100vh;
+  height: 100%;
+  overflow-y: auto;
+  position: fixed;
+}
+.mainLayout .sideBar .logo {
+  width: 150px;
+}
+.mainLayout .sideBar .item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 14px;
+  font-weight: 600;
+  color: #666666;
+  margin-bottom: 20px;
+  cursor: pointer;
+}
+.mainLayout .sideBar .sideLink {
+  margin-bottom: 20px;
+  font-size: 14px;
+  width: 200px;
+  font-weight: 600;
+  color: #333333;
+  transition: 0.3s ease;
+}
+.mainLayout .sideBar .sideLink .icon-main {
+  color: #cccccc;
+  margin-right: 10px;
+}
+.mainLayout .sideBar .sideLink.active {
+  color: #0378a2;
+}
+.mainLayout .sideBar .sideLink.active .icon-main {
+  color: #0378a2;
+}
+.mainLayout .sideBar .sideLink:hover {
+  color: #333333;
+}
+.mainLayout .sideBar .sideLink.logout {
+  color: #ff683c;
+}
+.mainLayout .sideBar .sideLink.userControl {
+  color: #0378a2;
+}
+@media screen and (max-width: 380px) {
+  .mainLayout .sideBar {
+    width: 180px !important;
+    min-width: 180px !important;
+  }
+  .mainLayout .sideBar .logo {
+    width: 80px;
+  }
+  .mainLayout .sideBar .sideLink {
+    font-size: 11px;
+  }
+  .mainLayout .sideBar .sideLink .icon-main {
+    margin-right: 20px;
+  }
+}
+.mainLayout .navBar {
+  height: 80px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+@media screen and (max-width: 900px) {
+  .mainLayout .navBar .mobile {
+    display: flex;
+  }
+}
+.mainLayout .navBar .pageTitle {
+  font-size: 18px;
+  font-weight: 600;
+  color: #000000;
+}
+.mainLayout .navBar .navLeft {
+  min-width: 150px;
+}
+.mainLayout .navBar .navRight {
+  display: flex;
+  align-items: center;
+}
+.mainLayout .navBar .navRight .navItem {
+  margin-right: 20px;
+}
+.mainLayout .navBar .navRight .navItem:last-child {
+  margin-right: 0;
+}
+@media screen and (max-width: 600px) {
+  .mainLayout .navBar .navRight .navItem {
+    margin-right: 0;
+  }
+}
+@media screen and (max-width: 380px) {
+  .mainLayout .navBar {
+    height: 60px;
+  }
+  .mainLayout .navBar .pageTitle {
+    font-size: 14px;
+    font-weight: 600;
+    color: #000000;
+  }
+  .mainLayout .navBar .navLeft {
+    min-width: 100px;
+  }
+}
+.mainLayout .navLogo {
+  width: 120px;
+}
+.mainLayout .moreSide {
+  display: block;
+  margin-right: 10px;
+}
+.mainLayout .contentMain {
+  max-width: 1240px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 20px;
+  box-sizing: border-box;
+  min-width: 320px;
+}
+.mainLayout .mainBar {
+  width: calc(100% - 250px);
+  position: fixed;
+  min-height: 100vh;
+  max-height: 100vh;
+  overflow-y: auto;
+  top: 0;
+  left: 250px;
+  transition: 0.3s ease;
+  overflow-y: auto;
+}
+.mainLayout .mainBar .overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: transparent;
+  z-index: 1;
+}
+.mainLayout .role-switcher .context {
+  background-color: #10bdfb;
+  padding: 5px 20px;
+  border-radius: 2px;
+}
+.mainLayout .role-switcher small {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+}
+.mainLayout .role-switcher small span {
+  margin-top: 5px;
+}
+.mainLayout .role-switcher small svg {
+  margin-top: -5px;
+}
+.mainLayout .role-switcher .dropdown-main {
+  width: 100%;
+}
+.mainLayout .role-switcher .dropdown-content {
+  color: #ffffff;
+  text-transform: uppercase;
+  font-size: 15px;
+  font-family: "Tajawal", sans-serif;
+  font-weight: 600;
+  width: 100%;
+}
+.mainLayout .role-switcher .head {
+  font-size: 14px;
+  font-family: "Tajawal", sans-serif;
+  font-weight: 500;
+  color: #666666;
+  margin-bottom: 10px;
+}
+.mainLayout .notifier {
+  margin-right: 40px;
+}
+.mainLayout .notifier svg {
+  width: 20px;
+  height: 20px;
+  color: #999999;
+}
+@media screen and (max-width: 380px) {
+  .mainLayout .navLogo {
+    width: 80px;
+  }
+  .mainLayout .moreSide {
+    margin-right: 5px;
+  }
+  .mainLayout .contentMain {
+    min-width: 200px;
+  }
+  .mainLayout .mainBar {
+    width: calc(100% - 180px);
+    left: 180px;
+  }
+  .mainLayout .notifier {
+    margin-right: 20px;
+  }
+  .mainLayout .notifier svg {
+    width: 15px;
+    height: 15px;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .mobile-side-bar.closed .sideBar {
+    left: -250px;
+  }
+  .mobile-side-bar.closed ~ .mainBar {
+    left: 0;
+    width: 100%;
+  }
+  .mobile-side-bar.closed ~ .mainBar .pageTitle {
+    font-size: 20px;
+  }
+  .mobile-side-bar.closed ~ .mainBar .overlay {
+    display: none;
+  }
+}
+
+/*# sourceMappingURL=mainlayout.css.map */

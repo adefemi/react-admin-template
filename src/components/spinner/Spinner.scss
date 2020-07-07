@@ -1,0 +1,21 @@
+@import "../../styles/theme";
+
+.lds-dual-ring {
+  display: inline-block;
+  width: 16px;
+  height: 16px;
+  margin: 1px;
+  border-radius: 50%;
+  border: 2px solid transparent;
+  animation: lds-dual-ring 0.5s linear infinite;
+}
+
+@keyframes lds-dual-ring {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
+}

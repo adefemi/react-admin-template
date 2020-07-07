@@ -1,0 +1,12 @@
+@import url("https://fonts.googleapis.com/css?family=Nunito+Sans:300,400,600,700,800,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Tajawal:wght@300;400;500&display=swap");
+.file-constrain .file-upload-button {
+  cursor: pointer;
+  border-radius: 4px;
+  border: 1px dashed rgba(0, 0, 0, 0.1);
+  outline: none !important;
+  background-color: rgba(0, 0, 0, 0.1);
+  color: rgba(0, 0, 0, 0.6);
+}
+
+/*# sourceMappingURL=fileUploadNew.css.map */

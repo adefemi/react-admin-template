@@ -1,0 +1,23 @@
+/* Tooltip container */
+.tooltip {
+  margin-bottom: -100px;
+  bottom: 2px;
+  display: inline-block;
+  background-color: rgba(black, 0.6);
+  width: 20px;
+  height: 20px;
+  line-height: 20px;
+  text-align: center;
+  color: white;
+  font-weight: bold;
+  border-radius: 50%;
+  cursor: pointer;
+  box-sizing: border-box;
+}
+.tooltip-inner {
+  width: 300px;
+  z-index: 9999999 !important;
+  @media screen and (max-width: calc(0.9 * 900px)) {
+    width: 200px !important;
+  }
+}

@@ -1,0 +1,57 @@
+@import url("https://fonts.googleapis.com/css?family=Nunito+Sans:300,400,600,700,800,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Tajawal:wght@300;400;500&display=swap");
+
+// Fonts
+$primary-font: "Nunito Sans", sans-serif;
+
+$secondary_font: "Tajawal", sans-serif;
+
+$default-font-size: 16px;
+
+// Font Colors
+$color-text: #4f6c8d;
+$color-text-light: #a3adb4;
+$color-text-lighter: #ccd6e1;
+
+$color-text-contrast: #ffffff;
+$color-text-contrast-light: #a7b5c6;
+$color-text-contrast-lighter: #5f5f63;
+
+$white-color: #ffffff;
+$black-color: #000000;
+
+// Background Colors
+$gray: #bec9d1;
+$input: #ffffff;
+$border-light: rgba(0, 0, 0, 0.2);
+
+// Primary Colors
+$primary-color: #084c6b;
+$secondary-color: #ff683c;
+$success-color: #3dd89a;
+$danger-color: rgb(255, 101, 45);
+$warning-color: rgb(227, 191, 99);
+
+// Dark Primary Colors
+$primary-color-dark: darken($primary-color, 10%);
+$secondary-color-dark: darken($secondary-color, 10%);
+$success-color-dark: darken($success-color, 10%);
+$danger-color-dark: darken($danger-color, 10%);
+$warning-color-dark: darken($warning-color, 10%);
+
+// Auxiliary Colors
+$primary-color-light: lighten($primary-color, 10%);
+$secondary-color-light: lighten($secondary-color, 10%);
+$success-color-light: lighten($success-color, 10%);
+$danger-color-light: lighten($danger-color, 10%);
+$warning-color-light: lighten($warning-color, 10%);
+
+// new colors
+$yellow-con: #ffea9f;
+$yellow-light: #f0f3f5;
+$green-con: #a1fee2;
+$blue-con: #caf6ff;
+$blue2-con: #d7deff;
+$blue3-con: #425cb9;
+$purple-con: #7b43a7;
+$purple2-con: #8e8eae;

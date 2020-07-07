@@ -1,0 +1,9 @@
+.adx-divider{
+  height: 1px;
+  border-bottom: 1px solid darken(white, 8%);
+  margin: 20px 0;
+
+  &.dashed{
+    border-bottom-style: dashed;
+  }
+}

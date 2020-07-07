@@ -1,0 +1,44 @@
+@import "../../styles/theme";
+
+.adx-result{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-family: $primary-font;
+
+  .title{
+    font-size: 25px;
+  }
+
+  .subtitle{
+    font-size: 15px;
+    color: darken(white, 40%);
+    margin-bottom: 20px;
+    text-align: center;
+  }
+
+  .status{
+    img{
+      width: 90px;
+    }
+  }
+}
+@media screen and (max-width: 600px) {
+  .adx-result{
+
+    .title{
+      font-size: 20px;
+    }
+
+    .subtitle{
+      font-size: 13px;
+    }
+
+    .status{
+      img{
+        width: 50px;
+      }
+    }
+  }
+}

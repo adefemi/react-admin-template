@@ -1,0 +1,30 @@
+@import url("https://fonts.googleapis.com/css?family=Nunito+Sans:300,400,600,700,800,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Tajawal:wght@300;400;500&display=swap");
+.form-group {
+  margin-bottom: 20px;
+}
+.form-group .flex {
+  display: flex;
+}
+.form-group .flex .required-indicator {
+  color: #ff652d;
+  margin: 0 5px;
+}
+.form-group span,
+.form-group small,
+.form-group label {
+  display: block;
+}
+.form-group small {
+  font-size: 11px;
+  font-weight: 600;
+  color: #999999;
+  margin-bottom: 15px;
+}
+.form-group span {
+  font-size: 13px;
+  margin-bottom: 0;
+  color: #333333;
+}
+
+/*# sourceMappingURL=formGroup.css.map */

@@ -1,0 +1,137 @@
+@import url("https://fonts.googleapis.com/css?family=Nunito+Sans:300,400,600,700,800,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Tajawal:wght@300;400;500&display=swap");
+.input-control {
+  position: relative;
+  flex: 1;
+}
+.input-control > * {
+  font-family: "Nunito Sans", sans-serif;
+}
+.input-control .input-container-cover {
+  display: flex;
+  width: 100%;
+}
+.input-control .input-error-text {
+  margin-top: 5px;
+  color: #ff652d;
+  font-size: 13px;
+}
+.input-control .currency-selector {
+  width: 90px;
+}
+.input-control .currency-selector .select-control {
+  min-width: 80px;
+}
+.input-control .currency-selector .select-control .select-button {
+  border: none;
+  border-right: 1px solid #cccccc;
+}
+.input-control .dropdown-control {
+  height: 50px;
+  width: 120px;
+  margin-right: 10px;
+}
+.input-control .dropdown-control input {
+  text-align: center;
+}
+.input-control .phone-dropdown {
+  padding: 0 3px !important;
+}
+.input-control .input-field {
+  width: 100%;
+  height: 40px;
+  border: 2px solid transparent;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  box-sizing: border-box;
+  border-radius: 4px;
+  position: relative;
+  transition: 0.5s ease;
+  min-width: 100px;
+  background-color: rgba(0, 0, 0, 0.05);
+}
+.input-control .input-field i:first-child {
+  display: block;
+  padding-left: 10px;
+}
+.input-control .input-field i:last-child {
+  display: block;
+  padding-right: 10px;
+}
+.input-control .input-field:hover, .input-control .input-field:focus-within {
+  border-color: #42cbfc;
+}
+.input-control input {
+  display: block;
+  width: 100%;
+  height: 100%;
+  text-align: left;
+  outline: none;
+  padding: 0 20px;
+  color: black !important;
+  box-sizing: border-box;
+  background-color: transparent;
+  border: none;
+  font-family: "Nunito Sans", sans-serif;
+  font-size: 14px;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+}
+.input-control input.iconLeft {
+  padding-left: 30px;
+}
+.input-control input.iconRight {
+  padding-right: 40px;
+}
+.input-control input:disabled {
+  cursor: not-allowed;
+}
+.input-control input::-webkit-input-placeholder {
+  color: rgba(0, 0, 0, 0.5);
+  font-size: 13px;
+}
+.input-control .iconLeft {
+  position: absolute;
+  left: 0;
+  color: #999999;
+}
+.input-control .iconRight {
+  position: absolute;
+  right: 0;
+  color: #999999;
+}
+.input-control .input-field.disabled:hover,
+.input-control .input-field.disabled:focus {
+  border-color: transparent !important;
+  box-shadow: none !important;
+}
+.input-control .input-field.disabled input {
+  color: #999999 !important;
+}
+
+.input-control.error .input-field {
+  border-color: #ff652d;
+}
+.input-control.error .input-field input {
+  color: #ff652d;
+}
+
+.input-control.small .input-field {
+  height: 25px;
+}
+.input-control.small .input-field input {
+  font-size: 12px;
+}
+
+.input-control.large .input-field {
+  height: 55px;
+}
+.input-control.large .input-field input {
+  font-size: 18px;
+}
+
+/*# sourceMappingURL=Input.css.map */

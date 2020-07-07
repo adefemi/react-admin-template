@@ -1,0 +1,49 @@
+@import "../../styles/theme";
+
+.adx-timepicker{
+  font-family: $primary-font;
+  position: relative;
+
+  .input-field{
+    border: 1px solid darken(white, 10%);
+    border-radius: 2px;
+    height: 30px;
+    overflow: hidden;
+    display: inline-flex;
+    padding: 0 10px;
+    align-items: center;
+    transition: .3s ease;
+    background-color: transparent;
+    .input-field{
+      border: none;
+    }
+
+    input{
+      border: none;
+      outline: none;
+
+      text-transform: capitalize;
+      color: darken(white, 60%);
+
+      &:disabled{
+        background-color: transparent;
+      }
+    }
+
+    img{
+      width: 15px;
+    }
+
+    &:hover{
+      border-color: $primary-color;
+    }
+  }
+
+  .timeFormat{
+    font-size: 13px;
+    font-weight: bold;
+    color: darken(white, 60%);
+  }
+
+
+}

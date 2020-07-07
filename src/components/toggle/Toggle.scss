@@ -1,0 +1,41 @@
+@import "../../styles/theme";
+
+
+
+.Toggle {
+  .toggle-wrapper {
+    width: 40px;
+    height: 20px;
+    border-radius: 15px;
+    display: inline-flex;
+    box-sizing: border-box;
+    padding: 3px;
+    align-items: center;
+    position: relative;
+    background: darken($white-color, 10%);
+    cursor: pointer;
+    border: none;
+    .toggle-switch {
+      width: 22px;
+      height: 22px;
+      background: white;
+      border-radius: 50%;
+      position: absolute;
+      transition: all 0.3s ease;
+      right:100%;
+      transform: translateX(100%);
+      box-shadow: 0 0 5px rgba(black, 0.1);
+
+      &.active {
+        right: 0 !important;
+        transform: translateX(0);
+        background-color: $primary-color;
+      }
+    }
+
+    &.active {
+      background: rgba($primary-color, 0.2);
+      border: none;
+    }
+  }
+}

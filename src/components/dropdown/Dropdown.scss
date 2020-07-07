@@ -1,0 +1,81 @@
+@import "../../styles/theme";
+
+.dropdown-main {
+    position: relative;
+    z-index: 4;
+
+    .dropdown-content {
+        font-family: $secondary-font;
+        font-weight: 600;
+        font-size: 13px;
+        cursor: pointer;
+        position: relative;
+    }
+
+    .overlay-drop{
+        position: fixed;
+        top: 0; left: 0; bottom: 0; right: 0;
+        background-color: transparent;
+        display: none;
+
+        &.open{
+            display: block;
+        }
+    }
+
+    ul {
+        position: absolute;
+        width: 100px;
+        border-radius: 6px;
+        background: $white-color;
+        padding: 0;
+        margin: 0;
+        top: 0;
+        right: 0;
+        box-shadow: 0 5px 10px rgba($black-color, 0.1);
+        max-height: 400px;
+        overflow-y: auto;
+        transform-origin: right top;
+        opacity: 0;
+        visibility: hidden;
+        transition: .5s ease;
+
+        /* width */
+        &::-webkit-scrollbar {
+            width: 3px;
+        }
+
+        /* Handle */
+        &::-webkit-scrollbar-thumb {
+            background: rgb(216, 214, 214);
+            border-radius: 10px;
+        }
+
+        li {
+            list-style: none;
+            text-align: center;
+            font-family: $secondary-font;
+            font-weight: 600;
+            color: #2E2E2E;
+            font-size: 13px;
+            padding: 12px 20px;
+            box-sizing: border-box;
+            cursor: pointer;
+            transition: .3s ease;
+
+            &:hover{
+                background-color: rgba($primary-color, 0.1);
+            }
+        }
+    }
+
+
+
+}
+
+.dropdown-main.open {
+    ul {
+        opacity: 1;
+        visibility: visible;
+    }
+}

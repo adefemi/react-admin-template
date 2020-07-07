@@ -1,0 +1,16 @@
+.Rater {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.Rater .star-filled svg {
+  fill: #f9c339;
+}
+
+.Rater .star-unfilled svg {
+  stroke: #f9c339;
+  fill: white;
+  stroke-width: 20px;
+}
+/*# sourceMappingURL=Rater.css.map */

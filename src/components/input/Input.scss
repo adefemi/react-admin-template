@@ -1,0 +1,165 @@
+@import "../../styles/theme";
+
+.input-control {
+  position: relative;
+  flex: 1;
+
+  & > * {
+    font-family: $primary-font;
+  }
+
+  .input-container-cover {
+    display: flex;
+    width: 100%;
+  }
+
+  .input-error-text {
+    margin-top: 5px;
+    color: $danger-color;
+    font-size: 13px;
+  }
+  .currency-selector {
+    width: 90px;
+    .select-control {
+      min-width: 80px;
+      .select-button {
+        border: none;
+        border-right: 1px solid #cccccc;
+      }
+    }
+  }
+  .dropdown-control {
+    height: 50px;
+    width: 120px;
+    margin-right: 10px;
+
+    input {
+      text-align: center;
+    }
+  }
+
+  .phone-dropdown {
+    padding: 0 3px !important;
+  }
+
+  .input-field {
+    width: 100%;
+    height: 40px;
+    border: 2px solid transparent;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    box-sizing: border-box;
+    border-radius: 4px;
+    position: relative;
+    transition: 0.5s ease;
+    min-width: 100px;
+    background-color: rgba(black, 0.05);
+
+    i:first-child {
+      display: block;
+      padding-left: 10px;
+    }
+
+    i:last-child {
+      display: block;
+      padding-right: 10px;
+    }
+
+    &:hover,
+    &:focus-within {
+      border-color: lighten($color: $primary-color, $amount: 30%);
+    }
+  }
+
+  input {
+    display: block;
+    width: 100%;
+    height: 100%;
+    text-align: left;
+    outline: none;
+    padding: 0 10px;
+    color: black !important;
+    box-sizing: border-box;
+    background-color: transparent;
+    border: none;
+    font-family: $primary-font;
+    font-size: 14px;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+
+    &.iconLeft {
+      padding-left: 30px;
+    }
+
+    &.iconRight {
+      padding-right: 40px;
+    }
+
+    &:disabled {
+      cursor: not-allowed;
+    }
+  }
+
+  input::-webkit-input-placeholder {
+    color: rgba(0, 0, 0, 0.5);
+    font-size: 13px;
+  }
+
+  .iconLeft {
+    position: absolute;
+    left: 0;
+    color: darken(white, 40%);
+  }
+
+  .iconRight {
+    position: absolute;
+    right: 0;
+    color: darken(white, 40%);
+  }
+
+  .input-field.disabled:hover,
+  .input-field.disabled:focus {
+    border-color: transparent !important;
+    box-shadow: none !important;
+  }
+
+  .input-field.disabled {
+    input {
+      color: darken(white, 40%) !important;
+    }
+  }
+}
+
+.input-control.error {
+  .input-field {
+    border-color: $danger-color;
+
+    input {
+      color: $danger-color;
+    }
+  }
+}
+
+.input-control.small {
+  .input-field {
+    height: 25px;
+
+    input {
+      font-size: 12px;
+    }
+  }
+}
+
+.input-control.large {
+  .input-field {
+    height: 55px;
+
+    input {
+      font-size: 18px;
+    }
+  }
+}

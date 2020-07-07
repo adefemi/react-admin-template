@@ -1,0 +1,36 @@
+@import "../../styles/theme";
+
+.tabs-container{
+  .heading{
+    display: flex;
+    padding: 20px 0;
+    border-bottom: 2px solid darken(white, 10%);
+    margin-bottom: 20px;
+    min-width: 1000px;
+  }
+
+  .tab-item{
+    font-size: 14px;
+    font-weight: 600;
+    color: black;
+    padding: 0 20px;
+    cursor: pointer;
+    transition: 1s ease;
+
+    &.active{
+      position: relative;
+      transition: 1s ease;
+
+      &:after{
+        content: "";
+        position: absolute;
+        height: 2px;
+        width: 100%;
+        left: 0;
+        bottom: -22px;
+        background-color: $primary-color;
+        transition: 1s ease;
+      }
+    }
+  }
+}

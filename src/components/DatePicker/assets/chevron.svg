@@ -1,0 +1,11 @@
+<svg width="32" height="32" xmlns="http://www.w3.org/2000/svg">
+
+ <g>
+  <title>background</title>
+  <rect fill="none" id="canvas_background" height="402" width="582" y="-1" x="-1"/>
+ </g>
+ <g>
+  <title>Layer 1</title>
+  <path id="Chevron_Right" fill-rule="evenodd" fill="#b2b2b2" d="m11.262,16.714l9.002,8.999c0.395,0.394 1.035,0.394 1.431,0c0.395,-0.394 0.395,-1.034 0,-1.428l-8.288,-8.285l8.287,-8.285c0.395,-0.394 0.395,-1.034 0,-1.429c-0.395,-0.394 -1.036,-0.394 -1.431,0l-9.002,8.999c-0.389,0.39 -0.389,1.04 0.001,1.429z" clip-rule="evenodd"/>
+ </g>
+</svg>

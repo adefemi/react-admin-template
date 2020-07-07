@@ -1,0 +1,35 @@
+@import url("https://fonts.googleapis.com/css?family=Nunito+Sans:300,400,600,700,800,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Tajawal:wght@300;400;500&display=swap");
+.adx-result {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-family: "Nunito Sans", sans-serif;
+}
+.adx-result .title {
+  font-size: 25px;
+}
+.adx-result .subtitle {
+  font-size: 15px;
+  color: #999999;
+  margin-bottom: 20px;
+  text-align: center;
+}
+.adx-result .status img {
+  width: 90px;
+}
+
+@media screen and (max-width: 600px) {
+  .adx-result .title {
+    font-size: 20px;
+  }
+  .adx-result .subtitle {
+    font-size: 13px;
+  }
+  .adx-result .status img {
+    width: 50px;
+  }
+}
+
+/*# sourceMappingURL=result.css.map */

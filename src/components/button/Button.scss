@@ -1,0 +1,118 @@
+@import "../../styles/theme";
+
+.btn-main {
+    background: blue;
+}
+
+.btn {
+    font-family: $secondary-font;
+    background: transparent;
+    border-radius: 4px;
+    padding: 0 15px;
+    height: 35px;
+    color: white;
+    cursor: pointer;
+    font-weight: 600;
+    display: flex;
+    align-items: center !important;
+    font-size: 12px;
+    justify-content: center !important;
+    border: 1px solid transparent;
+}
+
+.disabled {
+    opacity: 0.6;
+    cursor: not-allowed;
+}
+
+.btn:focus,
+.btn:active,
+.btn-sml:focus,
+.btn-sml:active,
+.btn {
+    outline: none;
+    position: relative;
+    text-decoration: none;
+
+    -webkit-box-shadow: -3px 21px 42px -38px rgba(86, 128, 249, 1);
+    -moz-box-shadow: -3px 21px 42px -38px rgba(86, 128, 249, 1);
+    box-shadow: -3px 21px 42px -38px rgba(86, 128, 249, 1);
+
+
+    &.primary {
+        background: $primary-color;
+        transition: .3s ease;
+
+        &:hover {
+            background: $primary-color-dark;
+        }
+    }
+
+    &.danger {
+        background: $danger-color;
+        transition: .3s ease;
+        &:hover {
+            background: $danger-color-dark;
+        }
+    }
+
+    &.success {
+        background: $success-color;
+        transition: .3s ease;
+        &:hover {
+            background: $success-color-dark;
+        }
+    }
+
+    &.default {
+        background: $white-color;
+        color: $black-color;
+        box-shadow: 0 2px 5px rgba($black-color, 0.1);
+        transition: .3s ease;
+        &:hover {
+            background: $color-text-lighter;
+        }
+    }
+
+    &.loading {
+        opacity: 0.7;
+
+        &>span {
+            margin-right: 6px;
+        }
+    }
+
+    &:hover {
+        cursor: pointer;
+    }
+
+    &:disabled,
+    .disabled {
+        opacity: 0.6;
+        cursor: not-allowed;
+    }
+
+    &.block {
+        width: 100%;
+        display: block;
+    }
+
+    .icon-left {
+        padding-right: 10px;
+    }
+
+    .content {
+        display: inline-flex;
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+.spinner{
+    &.danger{
+        .lds-dual-ring{
+            color: $danger-color !important;
+        }
+
+    }
+}

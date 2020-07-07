@@ -1,0 +1,98 @@
+@import "../../styles/theme";
+
+.Stepper {
+  width: 100%;
+
+  .outline-btn-primary {
+    background: #fff;
+    color: $primary-color;
+    border: 1px solid $primary-color;
+  }
+
+  .outline-btn-primary:hover,
+  .outline-btn-primary:focus,
+  .outline-btn-primary:active {
+    color: #ffffff;
+  }
+
+  .active {
+    background: $primary-color !important;
+    color: #ffffff !important;
+  }
+
+  .btn-page-nav {
+    width: 35px;
+    height: 35px;
+    min-width: 35px;
+    min-height: 35px;
+    border-radius: 35px;
+    cursor: default;
+    padding: 0;
+
+    &.active {
+      cursor: default;
+    }
+
+    &:hover:not(.active),
+    &:focus:not(.active),
+    &:active:not(.active) {
+      background: none !important;
+      color: unset;
+      border: 1px solid $primary-color !important;
+      cursor: default;
+    }
+  }
+
+  .step-line {
+    background-color: $gray;
+    height: 2px;
+    flex-grow: 1;
+    margin: 0 5px;
+    margin-top: 20px;
+  }
+
+  .stepper-text {
+    padding: 0;
+    margin-block-end: 0;
+    margin-top: 12px !important;
+    margin-left: 5px;
+    font-size: 16px !important;
+  }
+
+  .vertical-orientation {
+    .step-line {
+      display: none;
+    }
+
+    .stepper-text {
+      left: -25px;
+      position: relative;
+      padding-left: 48px;
+      min-height: 100px;
+      margin-top: 0px !important;
+    }
+
+    .dflex {
+      padding: 16px 0;
+    }
+
+    & > .dflex::before {
+      border-left: 3px solid $gray;
+      content: "";
+      position: relative;
+      left: 21px;
+      top: 35px;
+      margin: 14px 0;
+    }
+
+    & > .dflex:last-child.dflex::before {
+      border: none;
+    }
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .stepper-text {
+    display: none;
+  }
+}

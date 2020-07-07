@@ -1,0 +1,35 @@
+@import "../../styles/theme";
+
+.file-dragger{
+  background-color: $yellow-light;
+  position: relative;
+  .file-dragger-inner{
+    position: relative;
+    z-index: 2;
+    .file-upload-button{
+      width: 100%;
+      height: 150px;
+      border-radius: 10px;
+      border: 2px dashed darken(white, 10%);
+      background-color: transparent;
+    }
+  }
+
+  .content-dragger{
+    position: absolute;
+    max-width: 500px;
+    width: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    align-items: center;
+    bottom: 0;
+    top: 0;
+    z-index: 0;
+
+    img{
+      width: 80px;
+      margin-right: 40px;
+    }
+  }
+}

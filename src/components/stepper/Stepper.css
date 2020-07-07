@@ -1,0 +1,83 @@
+@import url("https://fonts.googleapis.com/css?family=Nunito+Sans:300,400,600,700,800,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Tajawal:wght@300;400;500&display=swap");
+.Stepper {
+  width: 100%;
+}
+.Stepper .outline-btn-primary {
+  background: #fff;
+  color: #0378a2;
+  border: 1px solid #0378a2;
+}
+.Stepper .outline-btn-primary:hover,
+.Stepper .outline-btn-primary:focus,
+.Stepper .outline-btn-primary:active {
+  color: #ffffff;
+}
+.Stepper .active {
+  background: #0378a2 !important;
+  color: #ffffff !important;
+}
+.Stepper .btn-page-nav {
+  width: 35px;
+  height: 35px;
+  min-width: 35px;
+  min-height: 35px;
+  border-radius: 35px;
+  cursor: default;
+  padding: 0;
+}
+.Stepper .btn-page-nav.active {
+  cursor: default;
+}
+.Stepper .btn-page-nav:hover:not(.active), .Stepper .btn-page-nav:focus:not(.active), .Stepper .btn-page-nav:active:not(.active) {
+  background: none !important;
+  color: unset;
+  border: 1px solid #0378a2 !important;
+  cursor: default;
+}
+.Stepper .step-line {
+  background-color: #bec9d1;
+  height: 2px;
+  flex-grow: 1;
+  margin: 0 5px;
+  margin-top: 20px;
+}
+.Stepper .stepper-text {
+  padding: 0;
+  margin-block-end: 0;
+  margin-top: 12px !important;
+  margin-left: 5px;
+  font-size: 16px !important;
+}
+.Stepper .vertical-orientation .step-line {
+  display: none;
+}
+.Stepper .vertical-orientation .stepper-text {
+  left: -25px;
+  position: relative;
+  padding-left: 48px;
+  min-height: 100px;
+  margin-top: 0px !important;
+}
+.Stepper .vertical-orientation .dflex {
+  padding: 16px 0;
+}
+.Stepper .vertical-orientation > .dflex::before {
+  border-left: 3px solid #bec9d1;
+  content: "";
+  position: relative;
+  left: 21px;
+  top: 35px;
+  margin: 14px 0;
+}
+.Stepper .vertical-orientation > .dflex:last-child.dflex::before {
+  border: none;
+}
+
+@media screen and (max-width: 768px) {
+  .stepper-text {
+    display: none;
+  }
+}
+
+/*# sourceMappingURL=Stepper.css.map */

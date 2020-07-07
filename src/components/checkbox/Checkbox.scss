@@ -1,0 +1,102 @@
+@import "../../styles/theme";
+
+
+$position: absolute;
+$left: -9999px;
+
+@mixin labeling(){
+  font-family: $secondary-font;
+  font-size: 14px;
+  position: relative;
+  padding-left: 28px;
+  cursor: pointer;
+  line-height: 20px;
+  display: inline-block;
+  color: #4c4c4c;
+}
+
+@mixin label-before($color:#fff){
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 18px;
+  height: 18px;
+  border: 1px solid #ddd;
+  border-radius: 2px;
+  background: $color;
+}
+
+@mixin label-after($color:$primary-color){
+  content: '';
+  width: 12px;
+  height: 12px;
+  background: $color;
+  position: absolute;
+  top: 4px;
+  left: 4px;
+  border-radius: 2px;
+  -webkit-transition: all 0.2s ease;
+  transition: all 0.2s ease;
+
+}
+
+.Checkbox[type="checkbox"]{
+
+  &:checked{
+    position: $position;
+    left: $left;
+
+    & + label{
+      @include labeling();
+
+      &:before{
+        @include label-before();
+      }
+
+      &:after{
+        @include label-after();
+
+        opacity: 1;
+        -webkit-transform: scale(1);
+        transform: scale(1);
+      }
+    }
+  }
+
+  &:not(:checked){
+    position: $position;
+    left: $left;
+
+    & + label{
+      @include labeling();
+
+      &:before{
+        @include label-before();
+      }
+
+      &:after{
+        @include label-after();
+
+        opacity: 0;
+        -webkit-transform: scale(0);
+        transform: scale(0);
+      }
+    }
+  }
+
+  &:disabled{
+    & + label{
+      cursor: not-allowed;
+      opacity: .7;
+
+      &:before{
+        @include label-before(#f5f5f5);
+      }
+
+      &:after{
+        @include label-after($primary-color-light);
+      }
+    }
+  }
+}

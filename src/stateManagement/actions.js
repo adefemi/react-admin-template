@@ -1,0 +1,12 @@
+export const setPageTitleAction = "SET_PAGE_TITLE";
+export const setPropertyPage = "SET_PROPERTY_PAGE";
+export const setUserDetails = "SET_USER_DETAILS";
+export const setRoles = "SET_ROLES";
+export const setGlobalLoader = "SET_GLOBAL_LOADER";
+export const reloadApplication = "RELOAD_APPLICATION";
+export const setOrderSummary = "SET_ORDER_SUMMARY";
+export const setUnitTypes = "SET_UNIT_TYPE";
+export const reloadBankAction = "RELOAD_BANK";
+export const reloadPropertyListing = "RELOAD_PROPERTY_LISTING";
+export const reloadNotification = "RELOAD_NOTIFICATION";
+export const reloadChat = "RELOAD_CHAT";
