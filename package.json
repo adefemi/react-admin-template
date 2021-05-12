@@ -4,7 +4,7 @@
   "private": true,
   "dependencies": {
     "axios": "^0.19.2",
-    "chart.js": "^2.9.3",
+    "chart.js": "^2.9.4",
     "lodash": "^4.17.15",
     "microseconds": "^0.2.0",
     "moment": "2.22.2",
